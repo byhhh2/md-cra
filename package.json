@@ -35,7 +35,8 @@
       "requireConfigFile": false,
       "babelOptions": {
         "presets": [
-          "@babel/preset-react"
+          "@babel/preset-react",
+          "@babel/preset-typescript"
         ]
       }
     },
@@ -76,7 +77,10 @@
     "@babel/eslint-parser": "^7.18.2",
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.18.0",
@@ -89,6 +93,9 @@
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
+    "ts-loader": "^9.3.1",
+    "type-fest": "^2.15.1",
+    "typescript": "^4.7.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",

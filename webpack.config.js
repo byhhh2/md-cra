@@ -7,7 +7,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const config = ({ isDev }) => ({
   mode: isDev ? 'development' : 'production',
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   entry: {
     main: './src/index',
@@ -39,6 +39,7 @@ const config = ({ isDev }) => ({
           plugins: [isDev && 'react-refresh/babel'].filter(Boolean),
         },
       },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
     ],
   },
   plugins: [
